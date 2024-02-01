@@ -1,29 +1,38 @@
 <?php
-$namataruna = "KAZIM";
-$umur = 17;
 
 
 // tipe data di php
 
 // integer
 $angka = 100;
+var_dump($angka);
 
 // string
 $kata = "string";
+var_dump($kata);
+
 
 // float
 $angka_desimal = 10.5;
+var_dump($angka_desimal);
+
 
 // boolean
 $trueFalse = true;
+var_dump($trueFalse);
+
 
 // array
+$namataruna = "KAZIM";
+$umur = 17;
 $data = [
     "nama" => $namataruna,
     "umur" => $umur,
-    "almat" => 'indonesia'
+    "alamat" => 'indonesia'
 
 ];
+var_dump($data);
+
 
 // object
 class Car {
@@ -43,6 +52,6 @@ class Car {
 
 // null VALUE
 $null = null;
-
+var_dump($null);
 
 ?>

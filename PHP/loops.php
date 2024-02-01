@@ -4,14 +4,14 @@ $i = 0;
 //while (ketika)
 // ketika i kurang dari sama dengan 10 maka tambah 1 hingga nilai terpenuhi
 while ($i <= 10 ) {
-    echo "angka";
+    echo "$i";
     $i++;
 }
 
 // do while (lakukan ketika)
 // mirip seperti while, tapi ini hanya dilakukan sekali dimana variable i akan terus dimunculkan jika nilainya lebih kecil dari 6
 do {
-    echo $i;
+    echo "$i <br>";
     $i++;
   } while ($i < 6);
 
