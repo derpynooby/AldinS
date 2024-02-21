@@ -1,148 +1,70 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon"  href="https://www.pngall.com/wp-content/uploads/13/White-Circle-PNG.png" type="img">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Noob Sites</title>
-</head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    #body {
-        display: flex;  
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-image: url(https://i.pinimg.com/originals/b8/2f/28/b82f28a7e9c8fcb3868d3d94652c107c.gif);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-color: black;
-        visibility: visible;
-    }
-    .wrapper {
-        border: solid 3px white;
-        width: 500px;
-        border-radius: 40px;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(3px);
-        color: white;
-        animation: rainbow infinite 30s;
-
-    }
-
-    @keyframes rainbow {
-        0%  { border-color: rgb(0, 0, 0);}
-        12.5% { border-color: rgb(100,100,100)}
-        25% { border-color: rgb(150,150,150);}
-        37.5% { border-color: rgb(200,200,200);}
-        50%{ border-color: rgb(255, 255, 255);}
-        62.5% { border-color: rgb(200,200,200);}
-        75% { border-color: rgb(150,150,150);}
-        87.5% { border-color: rgb(100,100,100)}
-        100%  { border-color: rgb(0, 0, 0);}
-    }
-
-    .border {
-        background-color: rgba(0, 0, 0, 0.4);
-        border: 3px solid;
-        border-color: white;
-        height: auto;
-        width: auto;
-        margin: 10%;
-        color: white;
-        border-radius: 20px;
-        backdrop-filter: blur(5px);
-    } 
-
-    pre {
-        color: white;
-    }
- 
-</style>
-
-<body id="body">
-    <div class="wrapper">
-        <center>
-
-        <div class="border alt">
-            <pre> Nama : M. Kazim Aldin S.
-Kelas : XI RPL
-Tentang : Directory php</pre>
-        </div>
-    
-            <?php
-            // dir() function
-            // Fungsi dir() mengembalikan sebuah instance dari kelas Direktori. Fungsi ini digunakan untuk membaca direktori, yang mencakup hal-hal berikut:
-
-            // Direktori yang diberikan dibuka
-            // Dua pegangan properti dan jalur dir() tersedia
-            // Properti pegangan dan jalur memiliki tiga metode: read(), rewind(), dan close()
-            // echo dir("screenshot");
+<?php
+include ("../../Dashboard/control.php");
+echo $head1;
 
 
-            // getcwd() function
-            // mengembalikan nama direktori saat ini
-            echo getcwd() . "<br>";
+
+// dir() function
+// Fungsi dir() mengembalikan sebuah instance dari kelas Direktori. Fungsi ini digunakan untuk membaca direktori, yang mencakup hal-hal berikut:
+
+// Direktori yang diberikan dibuka
+// Dua pegangan properti dan jalur dir() tersedia
+// Properti pegangan dan jalur memiliki tiga metode: read(), rewind(), dan close()
+// echo dir("screenshot");
 
 
-            // chdir() function
-            // mengubah direktori saat ini
-            // chdir("screenshot");
+// getcwd() function
+// mengembalikan nama direktori saat ini
+echo getcwd() . "<br>";
 
 
-            // chroot() function
-            // mengubah direktori root
-            // chroot("screenshot");
+// chdir() function
+// mengubah direktori saat ini
+// chdir("screenshot");
 
 
-            // opendir() function
-            // membuka direktori
-            // $dir = opendir("screenshot");
+// chroot() function
+// mengubah direktori root
+// chroot("screenshot");
 
 
-            // readdir() function
-            // membaca direktori
-            // echo readdir();
+// opendir() function
+// membuka direktori
+// $dir = opendir("screenshot");
 
 
-            // closedir() function
-            // menutup direktori
-            // closedir();
+// readdir() function
+// membaca direktori
+// echo readdir();
 
 
-            // mkdir() function
-            // membuat direktori
-            mkdir("test");
+// closedir() function
+// menutup direktori
+// closedir();
 
 
-            // rmdir() function
-            // menghapus direktori
-            rmdir("test");
+// mkdir() function
+// membuat direktori
+mkdir("test");
 
 
-            // rewinddir() function
-            // kembali ke awal
-            // rewinddir($dir);
+// rmdir() function
+// menghapus direktori
+rmdir("test");
 
 
-            // scandir() function
-            // berfungsi untuk mengecek(scan) jika ada kesalahan di direktori
-            // echo scandir("screenshot");
-            ?> 
+// rewinddir() function
+// kembali ke awal
+// rewinddir($dir);
+
+
+// scandir() function
+// berfungsi untuk mengecek(scan) jika ada kesalahan di direktori
+// echo scandir("screenshot");
+
+
+
+echo $footer1;
+?> 
            
-        </center>
-    </div>
-</body>
-</html>
+        
