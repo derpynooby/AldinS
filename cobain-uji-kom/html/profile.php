@@ -1,20 +1,25 @@
 <?php 
-$conn = mysqli_connect('localhost','root','','test');
+// $conn = mysqli_connect('localhost','root','','test');
 
-$name = ["name"];
-$email = ["email"];
-$password = ["password"];
+// $username = ["username"];
+// $email = ["email"];
+// $password = ["password"];
+// $fullname = ["fullname"];
+// $address = ["address"];
 
 
-if (isset($_POST["submit"])){
-    $name = htmlspecialchars($_POST["name"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $password = htmlspecialchars($_POST["password"]);
+// if (isset($_POST["submit"])){
+//     $username = htmlspecialchars($_POST["username"]);
+//     $email = htmlspecialchars($_POST["email"]);
+//     $password = htmlspecialchars($_POST["password"]);
+//     $fullname = htmlspecialchars($_POST["fullname"]);
+//     $address = htmlspecialchars($_POST["address"]);
    
+// 	$hashedPassword = password_hash($password, PASSWORD_BCRYPT);
     
-    $query = "INSERT INTO user VALUES('', '$name', '$email', '$password')";
-    mysqli_query($conn, $query);
-};
+//     $query = "INSERT INTO user VALUES('', '$username', '$fullname', '$address', '$email', '$hashedPassword')";
+//     mysqli_query($conn, $query);
+// };
 ?>
 
 <!DOCTYPE html>
@@ -69,10 +74,8 @@ if (isset($_POST["submit"])){
 							<a class="close-toggle"   href="javascript:void(0);"><i class="header-icons" data-eva="close-outline"></i></a>
 						</div>
 						<div class="responsive-logo">
-							<a href="index.html" class="header-logo"><img src="../assets/img/brand/logo.png" class="logo-11"></a>
-							<a href="index.html" class="header-logo"><img src="../assets/img/brand/logo-white.png" class="logo-1"></a>
+							<a href="index.html" class="header-logo"><img src="https://media.istockphoto.com/id/1184299091/vector/mouse-connected-to-a-book-icon-trendy-vector-thin-line-illustration-for-concepts-of-online.jpg?s=612x612&w=0&k=20&c=lm7d-y6L6tj35ETOedsG-hLL1tU9D1FzzRbZ-y3LmaM=" class="logo-1 rounded-5"></a>
 						</div>
-					
 					</div>
 					<button class="navbar-toggler nav-link icon navresponsive-toggler vertical-icon ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
 						<i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
@@ -113,14 +116,8 @@ if (isset($_POST["submit"])){
 
 										<div class="dropdown-menu">
 											<div class="main-header-profile header-img">
-												<div class="main-img-user"><img alt="" src="../assets/img/faces/6.jpg"></div>
-												<h6>Aldin S</h6><span>Premium Member</span>
+												<h6>No Account</h6>
 											</div>
-											<a class="dropdown-item" href="profile.html"><i class="far fa-user"></i> My Profile</a>
-											<a class="dropdown-item" href="profile.html"><i class="far fa-edit"></i> Edit Profile</a>
-											<a class="dropdown-item" href="profile.html"><i class="far fa-clock"></i> Activity Logs</a>
-											<a class="dropdown-item" href="profile.html"><i class="fas fa-sliders-h"></i> Account Settings</a>
-											<a class="dropdown-item" href="signin.php"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
 										</div>
 									</div>
 									<div class="dropdown main-header-message right-toggle">
@@ -140,22 +137,17 @@ if (isset($_POST["submit"])){
 			<div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
 			<div class="sticky">
 				<aside class="app-sidebar sidebar-scroll">
-					<div class="main-sidebar-header active">
-						<a class="desktop-logo logo-light active" href="index.html"><img src="../assets/img/brand/logo.png" class="main-logo" alt="logo"></a>
-						<a class="desktop-logo logo-dark active" href="index.html"><img src="../assets/img/brand/logo-white.png" class="main-logo" alt="logo"></a>
-						<a class="logo-icon mobile-logo icon-light active" href="index.html"><img src="../assets/img/brand/favicon.png" alt="logo"></a>
-						<a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="../assets/img/brand/favicon-white.png" alt="logo"></a>
-					</div>
+					
 					<div class="main-sidemenu">
 						<div class="main-sidebar-loggedin">
 							<div class="app-sidebar__user">
 								<div class="dropdown user-pro-body text-center">
+									<img src="https://media.istockphoto.com/id/1184299091/vector/mouse-connected-to-a-book-icon-trendy-vector-thin-line-illustration-for-concepts-of-online.jpg?s=612x612&w=0&k=20&c=lm7d-y6L6tj35ETOedsG-hLL1tU9D1FzzRbZ-y3LmaM=" alt="user-img" class="rounded-circle wd-150 mCS_img_loaded">
 									<div class="user-pic">
-										<img src="../assets/img/faces/6.jpg" alt="user-img" class="rounded-circle mCS_img_loaded">
 									</div>
 									<div class="user-info">
-										<h6 class=" mb-0 text-dark">Aldin S</h6>
-										<span class="text-muted app-sidebar__user-name text-sm">Owner</span>
+										<h6 class=" mb-0 text-dark">Digital library</h6>
+										<span class="text-muted app-sidebar__user-name text-sm">International</span>
 									</div>
 								</div>
 							</div>
@@ -163,28 +155,27 @@ if (isset($_POST["submit"])){
 						<br><br>
 						<div class="sidebar-navs">
 							<p>
-								We commit for a performance and make it the best in the world
+								You can read or borrow a book as easy as flipping your hand
 							</p>
 						</div>
 						<div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg></div>
 						<ul class="side-menu ">
 							<li class="slide">
-								<a class="side-menu__item" href="index.html"><i class="side-menu__icon fe fe-airplay"></i><span class="side-menu__label">Dashboard</span></a>
+								<a class="side-menu__item" href="index-after-login.html"><i class="side-menu__icon fe fe-airplay"></i><span class="side-menu__label">Dashboard</span></a>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item" data-bs-toggle="slide"   href="javascript:void(0);"><i class="side-menu__icon fe fe-box"></i><span class="side-menu__label">Login As</span><i class="angle fe fe-chevron-down"></i></a>
-								<ul class="slide-menu">
-									<li class="side-menu__label1"><a href="javascript:void(0);">Apps</a></li>
-									<li><a class="slide-item" href="login-user.html">User</a></li>
-									<li><a class="slide-item" href="login-admin.html">Administrator</a></li>
-									<li><a class="slide-item" href="login-officer.html">Officer</a></li>
-									
-									
-								</ul>
+								<a class="side-menu__item" href="book-list-after-login.html"><i class="side-menu__icon fe fe-book"></i><span class="side-menu__label">Book list</span></a>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item" href="register-user.html"><i class="side-menu__icon fe fe-airplay"></i><span class="side-menu__label">Register</span></a>
+								<a class="side-menu__item" href="read-history.html"><i class="side-menu__icon fe fe-book-open"></i><span class="side-menu__label">Read history</span></a>
 							</li>
+							<li class="slide">
+								<a class="side-menu__item" href="borrow-history.html"><i class="side-menu__icon fe fe-clock"></i><span class="side-menu__label">Borrow history</span></a>
+							</li>
+							<li class="slide">
+								<a class="side-menu__item" href="profile.php"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Profile</span></a>
+							</li>
+							
 							
 
 						<div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg></div>
@@ -197,24 +188,20 @@ if (isset($_POST["submit"])){
 		<div class="main-content app-content">
 
 			<!-- container -->
-			<div class="main-container container-fluid">
+			<div class="main-container container-fluid ">
 
 				<!-- breadcrumb -->
-				<div class="breadcrumb-header justify-content-between">
-					<div>
-						<h4 class="content-title mb-2">Hi, welcome back!</h4>
-						<nav aria-label="breadcrumb">
-							<h5>You can login as an admin officer or user from left sidebar</h5>
+				<div class="breadcrumb-header m d-block ">
+					<div class="d-flex">
+						<nav aria-label="breadcrumb" class="pd-30">
+							<h1 class="text-white">Your Profile</h1>
+							<h4 class="text-white">You can edit your profile from here</h4>
 						</nav>
 					</div>
-					<div class="d-flex my-auto">
-						<div class=" d-flex right-page">
-							
-						</div>
-					</div>
-				</div>
-				<!-- /breadcrumb -->
-				<div class="row row-sm">
+					<div class="row">
+						<div class="col-lg-12 col-xl-12">
+							<div class="row">
+							<div class="row row-sm">
 					<div class="col-lg-4">
 						<div class="card mg-b-20">
 							<div class="card-body">
@@ -780,9 +767,11 @@ if (isset($_POST["submit"])){
 						</div>
 					</div>
 				</div>
-
-				
-			</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /breadcrumb -->
 			<!-- Container closed -->
 		</div>
 		<!-- main-content closed -->
@@ -922,7 +911,7 @@ if (isset($_POST["submit"])){
 								<div>Settings</div>
 							</div>
 							<div class="col-4 text-center">
-								<a class="" href=""><i class="dropdown-icon mdi mdi-logout-variant fs-20 m-0 leading-tight"></i></a>
+								<a class="" href="index.html"><i class="dropdown-icon mdi mdi-logout-variant fs-20 m-0 leading-tight"></i></a>
 								<div>Sign out</div>
 							</div>
 						</div>
@@ -932,13 +921,7 @@ if (isset($_POST["submit"])){
 		</div>
 		<!--/Sidebar-right-->
 
-		<!-- Footer opened -->
-		<div class="main-footer ht-45">
-			<div class="container-fluid pd-t-0-f ht-100p">
-					<span> Copyright © 2022 <a   href="javascript:void(0);" class="text-primary">Azira</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a   href="javascript:void(0);"> Spruko </a> All rights reserved.</span>
-			</div>
-		</div>
-		<!-- Footer closed -->
+		
 	</div>
 		<!-- page closed -->
 
