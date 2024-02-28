@@ -1,42 +1,45 @@
 <?php
+
 $filename = basename(getcwd());
-$head1 = "<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='shortcut icon'  href='https://www.pngall.com/wp-content/uploads/13/White-Circle-PNG.png' type='img'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
-    <link rel='stylesheet' href='../../Dashboard/all-style.css'>
-    <title>Noob Sites</title>
-</head>
-<body id='body'>
-    <div class='wrapper'>
-        <center>
-        
+$imagename = (basename(getcwd()) . ".png");
 
-        <div class='border alt'>
-<pre>
+$link = array(
+	'../../PHP/Casting/cast.php',
+	'../../PHP/Constanta/constanta.php',
+	'../../PHP/Data_type/data_type.php',
+	'../../PHP/Directory/directory.php',
+	'../../PHP/Echo_and_print/difference_echo_and_print.php',
+	'../../PHP/Else_If/elseif.php',
+	'../../PHP/Function/function.php',
+	'../../PHP/Loops/loops.php',
+	'../../PHP/Math/math.php',
+	'../../PHP/Operators/operators.php',
+	'../../PHP/Switch/switch.php',
+	'../../PHP/Variables/variable.php',
+	'../../PHP/Form/register.php',
+	'../../PHP/Array/array.php',
+	'../../PHP/String/string.php'
+);
+$dashboardlink = array(
+	'../PHP/Casting/cast.php',
+	'../PHP/Constanta/constanta.php',
+	'../PHP/Data_type/data_type.php',
+	'../PHP/Directory/directory.php',
+	'../PHP/Echo_and_print/difference_echo_and_print.php',
+	'../PHP/Else_If/elseif.php',
+	'../PHP/Function/function.php',
+	'../PHP/Loops/loops.php',
+	'../PHP/Math/math.php',
+	'../PHP/Operators/operators.php',
+	'../PHP/Switch/switch.php',
+	'../PHP/Variables/variable.php',
+	'../PHP/Form/register.html',
+	'../PHP/Array/array.php',
+	'../PHP/String/string.php'
+);
 
-Nama : M. Kazim Aldin S.
-Kelas : XI RPL 
-Tentang : $filename 
-</pre>
-        </div><br>
-        <div>
-		";
+sort($link);
+sort($dashboardlink);
 
 
 
-$footer1 = "</div>
-<br>
-<a id='back-link' href=''>Back</a>
-</center>
-</div>
-</body>
-<script src='../../Dashboard/main.js'></script>
-</html>
-";
-?>
